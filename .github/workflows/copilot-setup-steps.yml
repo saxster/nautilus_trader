@@ -1,6 +1,8 @@
 name: "Copilot Setup Steps"
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
