@@ -5,11 +5,7 @@ permissions: # Principle of least privilege
   actions: read
 
 on:
-  push:
-    branches: [nightly-merge-test]
-  schedule:
-    - cron: '0 14 * * *' # At 14:00 UTC daily
-
+  workflow_dispatch:
 jobs:
   check-develop-status:
     runs-on: ubuntu-latest
