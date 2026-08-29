@@ -6,11 +6,8 @@ permissions: # Principle of least privilege
   security-events: write # Required for CodeQL to upload SARIF
 
 on:
-  pull_request:
-    branches: [master]
-  schedule:
-    - cron: '42 13 * * 4'
-
+  push:
+    branches: [main]
 jobs:
   analyze:
     name: Analyze
